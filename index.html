@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CØSMIX</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Caveat:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Fixed Persian Rug Background -->
+  <div class="rug-bg"></div>
+
+  <!-- ============ HERO: Polaroid Section ============ -->
+  <section class="hero" id="hero">
+    <div class="polaroid" id="polaroid">
+
+      <!-- Photo Area -->
+      <div class="polaroid__photo">
+        <img src="IMG-20260408-WA0001.jpg" alt="Band Photo" class="band-photo" />
+        <div class="polaroid__grain"></div>
+        <div class="polaroid__vignette"></div>
+      </div>
+
+      <!-- Polaroid Bottom Strip: Brand + Nav -->
+      <div class="polaroid__strip">
+        <div class="polaroid__brand">CØSMIX</div>
+        <nav class="polaroid__nav">
+          <a href="#home" class="nav-link">home</a>
+          <a href="#store" class="nav-link">store</a>
+          <a href="#live" class="nav-link">live</a>
+          <a href="#contact" class="nav-link">contact</a>
+          <a href="#about" class="nav-link">about us</a>
+        </nav>
+      </div>
+
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="scroll-hint" id="scrollHint">
+      <span>scroll</span>
+      <div class="scroll-hint__arrow"></div>
+    </div>
+  </section>
+
+  <!-- ============ MAIN CONTENT (above the rug) ============ -->
+  <main class="site-content" id="siteContent">
+
+    <!-- Sticky top nav that appears after scrolling past hero -->
+    <nav class="top-nav" id="topNav">
+      <div class="top-nav__brand">CØSMIX</div>
+      <div class="top-nav__links">
+        <a href="#home">home</a>
+        <a href="#store">store</a>
+        <a href="#live">live</a>
+        <a href="#contact">contact</a>
+        <a href="#about">about us</a>
+      </div>
+    </nav>
+
+    <!-- ===== SECTION: Home / Landing ===== -->
+    <section class="section section--home" id="home">
+      <div class="section__inner">
+        <h1 class="section__headline">
+          Cosmic <em>noise</em><br/>from the fringes.
+        </h1>
+        <p class="section__body">
+          Three drifters. One frequency. We play it loud and we play it slow.
+        </p>
+        <a href="#live" class="btn btn--primary">See us live →</a>
+      </div>
+      <div class="tape tape--tl"></div>
+      <div class="tape tape--br"></div>
+    </section>
+
+    <!-- ===== SECTION: Latest Release ===== -->
+    <section class="section section--release" id="release">
+      <div class="section__inner section__inner--split">
+        <div class="release__art">
+          <div class="release__art-placeholder">
+            <!-- Replace with actual album art img tag -->
+            <span>Album Art</span>
+          </div>
+        </div>
+        <div class="release__info">
+          <p class="section__label">Latest Release</p>
+          <h2 class="section__title">Drift & Static</h2>
+          <p class="section__body">Out now on all platforms. Recorded live to tape in a Toowoomba shed, 2025.</p>
+          <div class="release__links">
+            <a href="#" class="btn btn--secondary">Spotify</a>
+            <a href="#" class="btn btn--secondary">Bandcamp</a>
+            <a href="#" class="btn btn--secondary">Apple Music</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION: Store ===== -->
+    <section class="section section--store" id="store">
+      <div class="section__inner">
+        <p class="section__label">The Shop</p>
+        <h2 class="section__title">Merch &amp; Records</h2>
+        <div class="store__grid">
+          <!-- Add store items here — duplicate .store__item as needed -->
+          <div class="store__item">
+            <div class="store__item-img-wrap">
+              <div class="store__item-img-placeholder"></div>
+            </div>
+            <p class="store__item-name">Tour Tee — Black</p>
+            <p class="store__item-price">$35</p>
+            <a href="#" class="btn btn--outline">Add to cart</a>
+          </div>
+          <div class="store__item">
+            <div class="store__item-img-wrap">
+              <div class="store__item-img-placeholder"></div>
+            </div>
+            <p class="store__item-name">Drift &amp; Static LP</p>
+            <p class="store__item-price">$30</p>
+            <a href="#" class="btn btn--outline">Add to cart</a>
+          </div>
+          <div class="store__item">
+            <div class="store__item-img-wrap">
+              <div class="store__item-img-placeholder"></div>
+            </div>
+            <p class="store__item-name">Embroidered Cap</p>
+            <p class="store__item-price">$28</p>
+            <a href="#" class="btn btn--outline">Add to cart</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION: Live Dates ===== -->
+    <section class="section section--live" id="live">
+      <div class="section__inner">
+        <p class="section__label">On the road</p>
+        <h2 class="section__title">Live Dates</h2>
+        <div class="shows__list">
+          <!-- Duplicate .show__row to add more dates -->
+          <div class="show__row">
+            <span class="show__date">12 APR 2026</span>
+            <span class="show__venue">The Zoo — Brisbane, QLD</span>
+            <a href="#" class="btn btn--outline btn--sm">Tickets</a>
+          </div>
+          <div class="show__row">
+            <span class="show__date">19 APR 2026</span>
+            <span class="show__venue">Rad Bar — Wollongong, NSW</span>
+            <a href="#" class="btn btn--outline btn--sm">Tickets</a>
+          </div>
+          <div class="show__row">
+            <span class="show__date">03 MAY 2026</span>
+            <span class="show__venue">Corner Hotel — Melbourne, VIC</span>
+            <a href="#" class="btn btn--outline btn--sm">Tickets</a>
+          </div>
+          <div class="show__row">
+            <span class="show__date">17 MAY 2026</span>
+            <span class="show__venue">Jive — Adelaide, SA</span>
+            <a href="#" class="btn btn--outline btn--sm">Tickets</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION: About ===== -->
+    <section class="section section--about" id="about">
+      <div class="section__inner section__inner--split section__inner--reverse">
+        <div class="about__photo-wrap">
+          <img src="IMG-20260408-WA0001.jpg" alt="Band" class="about__photo" />
+          <div class="about__photo-frame"></div>
+        </div>
+        <div class="about__text">
+          <p class="section__label">The band</p>
+          <h2 class="section__title">About Us</h2>
+          <p class="section__body">
+            CØSMIX formed somewhere between a service road and a good idea. We make the kind of music that sounds best through a car stereo with the windows down.
+          </p>
+          <p class="section__body">
+            Influenced by the sprawl of Australian suburban nothing, the hiss of old tape, and whatever was on the radio in 2003.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION: Contact ===== -->
+    <section class="section section--contact" id="contact">
+      <div class="section__inner section__inner--narrow">
+        <p class="section__label">Get in touch</p>
+        <h2 class="section__title">Contact</h2>
+        <p class="section__body">For bookings, press, and general good vibes:</p>
+        <a href="mailto:band@cosmix.com" class="contact__email">band@cosmix.com</a>
+        <div class="contact__socials">
+          <a href="#" class="social-link">Instagram</a>
+          <a href="#" class="social-link">Facebook</a>
+          <a href="#" class="social-link">Bandcamp</a>
+          <a href="#" class="social-link">Spotify</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>© 2026 CØSMIX — All rights reserved.</p>
+    </footer>
+
+  </main><!-- /site-content -->
+
+  <script src="main.js"></script>
+</body>
+</html>
