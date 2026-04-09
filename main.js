@@ -14,7 +14,6 @@
   /* ── Elements ─────────────────────────────────────────── */
   const polaroid   = document.getElementById('polaroid');
   const hero       = document.getElementById('hero');
-  const topNav     = document.getElementById('topNav');
   const scrollHint = document.getElementById('scrollHint');
   const sections   = document.querySelectorAll('.section');
 
@@ -59,9 +58,6 @@
 
     /* Scroll hint */
     if (scrollHint) scrollHint.classList.toggle('is-hidden', scrollY > 40);
-
-    /* Top nav */
-    topNav.classList.toggle('is-visible', scrollY > heroHeight * 0.6);
 
     ticking = false;
   }
