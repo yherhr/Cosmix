@@ -11,45 +11,65 @@
 </head>
 <body>
 
-  <!-- Fixed Persian Rug Background -->
-  <div class="rug-bg"></div>
+  <!--
+    ═══════════════════════════════════════════════════
+    RUG IMAGE — drop rug.jpg into this folder.
+    See rug-image-requirements.md for full photo specs.
+    The CSS pattern below is the automatic fallback if
+    no image is provided.
+    ═══════════════════════════════════════════════════
+  -->
+  <div class="rug-bg">
+    <div class="rug-wear rug-wear--path"></div>
+    <div class="rug-wear rug-wear--fade"></div>
+    <div class="rug-stain rug-stain--a"></div>
+    <div class="rug-stain rug-stain--b"></div>
+    <div class="rug-stain rug-stain--c"></div>
+    <div class="rug-wear rug-wear--threadbare"></div>
+  </div>
 
-  <!-- ============ HERO: Polaroid Section ============ -->
+  <!-- ═══ HERO: Polaroid on rug ═══ -->
   <section class="hero" id="hero">
     <div class="polaroid" id="polaroid">
 
-      <!-- Photo Area -->
       <div class="polaroid__photo">
         <img src="IMG-20260408-WA0001.jpg" alt="Band Photo" class="band-photo" />
         <div class="polaroid__grain"></div>
         <div class="polaroid__vignette"></div>
+        <div class="polaroid__fold polaroid__fold--diag"></div>
+        <div class="polaroid__fold polaroid__fold--horiz"></div>
+        <div class="polaroid__photo-stain"></div>
       </div>
 
-      <!-- Polaroid Bottom Strip: Brand + Nav -->
       <div class="polaroid__strip">
+        <div class="polaroid__ring polaroid__ring--a"></div>
+        <div class="polaroid__ring polaroid__ring--b"></div>
+        <div class="polaroid__ring polaroid__ring--c"></div>
+        <div class="polaroid__age"></div>
+        <div class="polaroid__smudge"></div>
         <div class="polaroid__brand">CØSMIX</div>
         <nav class="polaroid__nav">
-          <a href="#home" class="nav-link">home</a>
-          <a href="#store" class="nav-link">store</a>
-          <a href="#live" class="nav-link">live</a>
+          <a href="#home"    class="nav-link">home</a>
+          <a href="#store"   class="nav-link">store</a>
+          <a href="#live"    class="nav-link">live</a>
           <a href="#contact" class="nav-link">contact</a>
-          <a href="#about" class="nav-link">about us</a>
+          <a href="#about"   class="nav-link">about us</a>
         </nav>
       </div>
 
+      <div class="polaroid__curl"></div>
     </div>
 
-    <!-- Scroll hint -->
     <div class="scroll-hint" id="scrollHint">
       <span>scroll</span>
       <div class="scroll-hint__arrow"></div>
     </div>
   </section>
 
-  <!-- ============ MAIN CONTENT (above the rug) ============ -->
+  <!-- ═══ CONTENT — cards floating on the rug ═══ -->
   <main class="site-content" id="siteContent">
 
-    <!-- Sticky top nav that appears after scrolling past hero -->
+    <!-- Sticky nav — slides in once past hero -->
     <nav class="top-nav" id="topNav">
       <div class="top-nav__brand">CØSMIX</div>
       <div class="top-nav__links">
@@ -61,8 +81,11 @@
       </div>
     </nav>
 
-    <!-- ===== SECTION: Home / Landing ===== -->
+    <!-- ── Home ── -->
     <section class="section section--home" id="home">
+      <!-- Decorative tape strips -->
+      <div class="tape tape--tl"></div>
+      <div class="tape tape--br"></div>
       <div class="section__inner">
         <h1 class="section__headline">
           Cosmic <em>noise</em><br/>from the fringes.
@@ -72,22 +95,22 @@
         </p>
         <a href="#live" class="btn btn--primary">See us live →</a>
       </div>
-      <div class="tape tape--tl"></div>
-      <div class="tape tape--br"></div>
     </section>
 
-    <!-- ===== SECTION: Latest Release ===== -->
+    <!-- ── Latest Release ── -->
     <section class="section section--release" id="release">
+      <!-- Corner pin -->
+      <div class="section__pin section__pin--tr"></div>
       <div class="section__inner section__inner--split">
         <div class="release__art">
           <div class="release__art-placeholder">
-            <!-- Replace with actual album art img tag -->
+            <!-- Replace with: <img src="album.jpg" alt="Drift & Static"> -->
             <span>Album Art</span>
           </div>
         </div>
         <div class="release__info">
           <p class="section__label">Latest Release</p>
-          <h2 class="section__title">Drift & Static</h2>
+          <h2 class="section__title">Drift &amp; Static</h2>
           <p class="section__body">Out now on all platforms. Recorded live to tape in a Toowoomba shed, 2025.</p>
           <div class="release__links">
             <a href="#" class="btn btn--secondary">Spotify</a>
@@ -98,33 +121,28 @@
       </div>
     </section>
 
-    <!-- ===== SECTION: Store ===== -->
+    <!-- ── Store ── -->
     <section class="section section--store" id="store">
+      <div class="tape tape--tl"></div>
       <div class="section__inner">
         <p class="section__label">The Shop</p>
         <h2 class="section__title">Merch &amp; Records</h2>
         <div class="store__grid">
-          <!-- Add store items here — duplicate .store__item as needed -->
+          <!-- Duplicate .store__item to add products -->
           <div class="store__item">
-            <div class="store__item-img-wrap">
-              <div class="store__item-img-placeholder"></div>
-            </div>
+            <div class="store__item-img-placeholder"></div>
             <p class="store__item-name">Tour Tee — Black</p>
             <p class="store__item-price">$35</p>
             <a href="#" class="btn btn--outline">Add to cart</a>
           </div>
           <div class="store__item">
-            <div class="store__item-img-wrap">
-              <div class="store__item-img-placeholder"></div>
-            </div>
+            <div class="store__item-img-placeholder"></div>
             <p class="store__item-name">Drift &amp; Static LP</p>
             <p class="store__item-price">$30</p>
             <a href="#" class="btn btn--outline">Add to cart</a>
           </div>
           <div class="store__item">
-            <div class="store__item-img-wrap">
-              <div class="store__item-img-placeholder"></div>
-            </div>
+            <div class="store__item-img-placeholder"></div>
             <p class="store__item-name">Embroidered Cap</p>
             <p class="store__item-price">$28</p>
             <a href="#" class="btn btn--outline">Add to cart</a>
@@ -133,8 +151,10 @@
       </div>
     </section>
 
-    <!-- ===== SECTION: Live Dates ===== -->
+    <!-- ── Live Dates ── -->
     <section class="section section--live" id="live">
+      <div class="section__pin section__pin--tl"></div>
+      <div class="section__pin section__pin--tr"></div>
       <div class="section__inner">
         <p class="section__label">On the road</p>
         <h2 class="section__title">Live Dates</h2>
@@ -164,8 +184,9 @@
       </div>
     </section>
 
-    <!-- ===== SECTION: About ===== -->
+    <!-- ── About ── -->
     <section class="section section--about" id="about">
+      <div class="tape tape--br"></div>
       <div class="section__inner section__inner--split section__inner--reverse">
         <div class="about__photo-wrap">
           <img src="IMG-20260408-WA0001.jpg" alt="Band" class="about__photo" />
@@ -175,17 +196,18 @@
           <p class="section__label">The band</p>
           <h2 class="section__title">About Us</h2>
           <p class="section__body">
-            CØSMIX formed somewhere between yohans left cheek and right cheek. We make the kind of music that sounds best through a car stereo with the windows down.
+            CØSMIX formed somewhere between a service road and a good idea. We make the kind of music that sounds best through a car stereo with the windows down.
           </p>
           <p class="section__body">
-            Influenced by the sprawl of Australian suburban penis, the hiss of old cum exiting my peen, and whatever was on the radio in 2003.
+            Influenced by the sprawl of Australian suburban nothing, the hiss of old tape, and whatever was on the radio in 2003.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- ===== SECTION: Contact ===== -->
+    <!-- ── Contact ── -->
     <section class="section section--contact" id="contact">
+      <div class="section__pin section__pin--tl"></div>
       <div class="section__inner section__inner--narrow">
         <p class="section__label">Get in touch</p>
         <h2 class="section__title">Contact</h2>
@@ -200,12 +222,11 @@
       </div>
     </section>
 
-    <!-- Footer -->
     <footer class="site-footer">
       <p>© 2026 CØSMIX — All rights reserved.</p>
     </footer>
 
-  </main><!-- /site-content -->
+  </main>
 
   <script src="main.js"></script>
 </body>
